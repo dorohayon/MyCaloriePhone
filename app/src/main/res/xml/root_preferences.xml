@@ -1,0 +1,122 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Your details">
+
+        <EditTextPreference
+            app:key="name"
+            app:title="Your name"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:entries="@array/Gender"
+            android:entryValues="@array/Gender"
+            android:key="Gender"
+            android:title="Your gender"
+            app:useSimpleSummaryProvider="true" />
+        />
+        <EditTextPreference
+            app:key="age"
+            app:title="Your age"
+            android:inputType="numberDecimal"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="weight"
+            app:title="Your weight"
+            android:inputType="numberDecimal"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <EditTextPreference
+            app:key="height"
+            app:title="Your height"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Your Target">
+        <EditTextPreference
+            app:key="weightTarget"
+            app:title="Your target weight"
+            android:inputType="numberDecimal"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:entries="@array/sportLevelKeys"
+            android:entryValues="@array/sportLevelValues"
+            android:key="LevelOfPhysicalActivity"
+            android:title="Your level of physical activity"
+            app:useSimpleSummaryProvider="true" />
+        />
+        <ListPreference
+            android:entries="@array/changeSpeedKeys"
+            android:entryValues="@array/changeSpeedValue"
+            android:key="WeightChangeSpeed"
+            android:title="How much weight you want to\nlose/gain per week"
+            app:useSimpleSummaryProvider="true" />
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Step Counter">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="stepCounterSwitch"
+            android:title="Use step counter" />
+
+    </PreferenceCategory>
+
+
+        <PreferenceCategory app:title="Your favorites foods\n\n\nBreakfest">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="favoriteBreakfestSwitch"
+                android:title="Use favorite breakfest" />
+            <Preference android:title="Edit foods"
+                android:key="editFavBreakfestFoodsButton"
+                android:summary="Click here to edit favorite breakfest foods"/>
+
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="Lunch">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="favoriteLunchSwitch"
+                android:title="Use favorite lunch" />
+            <Preference android:title="Edit foods"
+                android:key="editFavLunchFoodsButton"
+                android:summary="Click here to edit favorite lunch foods"/>
+        </PreferenceCategory>
+
+
+        <PreferenceCategory app:title="Dinner">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="favoriteDinnerSwitch"
+                android:title="Use favorite Dinner" />
+            <Preference android:title="Edit foods"
+                android:key="editFavDinnerFoodsButton"
+                android:summary="Click here to edit favorite dinner foods"/>
+        </PreferenceCategory>
+
+
+</PreferenceScreen>

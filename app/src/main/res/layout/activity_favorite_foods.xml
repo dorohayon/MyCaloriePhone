@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/add_favorite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add new food to breakfast favorites" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_favorite_button"
+        android:padding="8dp" />
+</RelativeLayout>

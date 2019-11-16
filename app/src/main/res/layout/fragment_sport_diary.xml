@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.SportDiaryFragment">
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addSportFloatButton"
+        app:srcCompat="@drawable/ic_action_add_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:tint="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/totalSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:text="total steps"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMySports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalSteps"
+        android:padding="4dp" />
+</RelativeLayout>

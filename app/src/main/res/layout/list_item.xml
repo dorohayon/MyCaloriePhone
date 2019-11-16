@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of pets -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/diary_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="false"
+            android:padding="4dp"
+            android:text="חלב"
+            android:textColor="#2B3D4D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diary_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:text="1.0 כוס"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/diary_calories"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="100 קלוריות"
+        android:textColor="#2B3D4D"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/diary_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#2B3D4D"
+        android:textSize="16sp" />
+
+
+
+
+</LinearLayout>

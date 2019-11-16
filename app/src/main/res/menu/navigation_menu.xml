@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myDiaryNav"
+        android:icon="@drawable/ic_nav_diary"
+        android:title="My Diary"/>
+
+    <item android:id="@+id/foodListNav"
+        android:icon="@drawable/ic_nav_foodlist"
+        android:title="Food List"/>
+
+    <item android:id="@+id/sportListNav"
+        android:icon="@drawable/ic_nav_sportlist"
+        android:title="Sport List"/>
+
+    <item android:id="@+id/settingsNav"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="Settings"/>
+
+</menu>

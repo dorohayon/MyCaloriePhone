@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My CaloriePhone</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_calories">Calories</string>
+    <string name="choose_image">Click to Choose Image</string>
+    <string name="choose_size">Choose a size</string>
+    <string-array name="food_size_array">
+        <item>100 Gram</item>
+        <item>1 Cup</item>
+        <item>1 Dish</item>
+        <item>1 Unit</item>
+        <item>1 Little-Spoon</item>
+    </string-array>
+    <string name="openNav">Open</string>
+    <string name="closeNav">Close</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+</resources>

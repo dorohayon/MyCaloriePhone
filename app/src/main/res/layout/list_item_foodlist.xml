@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of pets -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+
+        <TextView
+            android:id="@+id/list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="test hello"
+            android:textColor="#2B3D4D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/list_item_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="test"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            android:textSize="16sp" />
+
+
+
+</LinearLayout>

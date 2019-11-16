@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.NewFoodToFoodlistListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_editor_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Name" />
+
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/edit_name_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/edit_name"
+            android:inputType="textCapWords"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_editor_calories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Calories" />
+        <!-- Breed field -->
+        <EditText
+            android:id="@+id/edit_calories_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/edit_calories"
+            android:inputType="number|textCapWords"
+            android:padding="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_editor_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Measurement" />
+
+        <Spinner
+            android:id="@+id/edit_serving_size_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/food_size_array"
+            android:paddingLeft="10dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:prompt="@string/choose_size"
+            android:spinnerMode="dropdown" />
+
+
+    </LinearLayout>
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image_editor"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_report_image" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/add_pic_button_editor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="Click to add picture"-->
+<!--        android:textColor="#F73939" />-->
+
+
+</LinearLayout>
