@@ -33,8 +33,8 @@ public class NotificationsUtils {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID_FAVORITE_NOTIFICATIONS)
                 .setSmallIcon(R.drawable.ic_notification_icon)
-                .setContentTitle("Time for breakfast")
-                .setContentText("Click to add your favorite breakfast")
+                .setContentTitle(context.getResources().getString(R.string.timeforbreakfast))
+                .setContentText(context.getResources().getString(R.string.clicktoaddfavoritebreakfast))
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setDefaults(Notification.DEFAULT_VIBRATE)
                 .setAutoCancel(true)
@@ -49,8 +49,8 @@ public class NotificationsUtils {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID_FAVORITE_NOTIFICATIONS)
                 .setSmallIcon(R.drawable.ic_notification_icon)
-                .setContentTitle("Time for dinner")
-                .setContentText("Click to add your favorite dinner")
+                .setContentTitle(context.getResources().getString(R.string.timefordinner))
+                .setContentText(context.getResources().getString(R.string.clickaddfavdinner))
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setDefaults(Notification.DEFAULT_VIBRATE)
                 .setAutoCancel(true)
@@ -67,8 +67,8 @@ public class NotificationsUtils {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID_FAVORITE_NOTIFICATIONS)
                 .setSmallIcon(R.drawable.ic_notification_icon)
-                .setContentTitle("Time for lunch")
-                .setContentText("Click to add your favorite lunch")
+                .setContentTitle(context.getResources().getString(R.string.timeforlunch))
+                .setContentText(context.getResources().getString(R.string.clickaddfavlunch))
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setDefaults(Notification.DEFAULT_VIBRATE)
                 .setAutoCancel(true)
@@ -100,8 +100,8 @@ public class NotificationsUtils {
 
        Notification notification = new NotificationCompat.Builder(context, CHANNEL_ID_FAVORITE_NOTIFICATIONS)
                 .setSmallIcon(R.drawable.ic_notification_icon)
-                .setContentTitle("Step Counter is running")
-                .setContentText("Click to to open MyCaloriePhone settings")
+                .setContentTitle(context.getResources().getString(R.string.stepisrunning))
+                .setContentText(context.getResources().getString(R.string.clickopensettings))
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setDefaults(Notification.DEFAULT_VIBRATE)
                 .setContentIntent(PendingIntent.getService(context,PENDING_INTENT_STOP_STEP_COUNTER,new Intent(context, StopStepCounterService.class),PendingIntent.FLAG_CANCEL_CURRENT))

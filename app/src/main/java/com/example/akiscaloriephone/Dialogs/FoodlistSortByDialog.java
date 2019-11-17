@@ -53,7 +53,7 @@ public class FoodlistSortByDialog extends DialogFragment {
                 checked=0;
         }
 // 2. Chain together various setter methods to set the dialog characteristics
-        builder.setTitle("Please choose foods order")
+        builder.setTitle(getResources().getString(R.string.pleasechoosefoodorder))
                 .setSingleChoiceItems(R.array.foodsOrderArray,checked, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

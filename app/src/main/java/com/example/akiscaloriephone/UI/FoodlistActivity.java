@@ -137,14 +137,14 @@ public class FoodlistActivity extends BaseActivity implements FoodListAdapter.It
                 sequence.addSequenceItem(
                         new MaterialShowcaseView.Builder(activity)
                                 .setTarget(addnewfood)
-                                .setContentText("here you can create new food to the list")
+                                .setContentText(getResources().getString(R.string.herecreatenewfood))
                                 .setDismissOnTouch(true)
                                 .build()
                 );
                 sequence.addSequenceItem(
                         new MaterialShowcaseView.Builder(activity)
                                 .setTarget(sortByButton)
-                                .setContentText("here you can choose how to sort the foods")
+                                .setContentText(getResources().getString(R.string.herechoosehowtosort))
                                 .setDismissOnTouch(true)
                                 .build()
                 );
@@ -152,7 +152,7 @@ public class FoodlistActivity extends BaseActivity implements FoodListAdapter.It
                 sequence.addSequenceItem(
                         new MaterialShowcaseView.Builder(activity)
                                 .setTarget(searchView)
-                                .setContentText("here you search foods")
+                                .setContentText(getResources().getString(R.string.heresearch))
                                 .setDismissOnTouch(true)
                                 .withRectangleShape()
                                 .build()

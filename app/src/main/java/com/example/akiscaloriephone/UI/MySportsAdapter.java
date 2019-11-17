@@ -57,10 +57,10 @@ public class MySportsAdapter extends RecyclerView.Adapter<MySportsAdapter.MySpor
     public void onBindViewHolder(@NonNull MySportsAdapter.MySportsViewHolder holder, int position) {
         SportDiaryEntry entry=entries.get(position);
         holder.nameTextView.setText(entry.getName());
-        holder.caloriesTextView.setText(String.valueOf(entry.getCaloriesBurned())+" Calories\nburned");
+        holder.caloriesTextView.setText(String.valueOf(entry.getCaloriesBurned())+" "+context.getResources().getString(R.string.calories_burned));
         SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
         holder.hourTextView.setText(formatter.format(entry.getDate()));
-        holder.intensityAndTimeTextView.setText(entry.getTime()+" Minutes, "+entry.getIntensity());
+        holder.intensityAndTimeTextView.setText(entry.getTime()+" "+context.getResources().getString(R.string.minutes)+", "+entry.getIntensity());
     }
 
     @Override
@@ -90,8 +90,8 @@ public class MySportsAdapter extends RecyclerView.Adapter<MySportsAdapter.MySpor
 
         @Override
         public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
-            menu.setHeaderTitle("Select Action");
-            MenuItem delete = menu.add(Menu.NONE,2,2,"Delete");
+            menu.setHeaderTitle(context.getResources().getString(R.string.selectaction));
+            MenuItem delete = menu.add(Menu.NONE,2,2,context.getResources().getString(R.string.delete));
             delete.setOnMenuItemClickListener(onChange);
         }
 
@@ -101,7 +101,7 @@ public class MySportsAdapter extends RecyclerView.Adapter<MySportsAdapter.MySpor
                 switch (item.getItemId()){
                     case 2:
                         deleteSportItem();
-                        Toast.makeText(context,"Sport deleted",Toast.LENGTH_LONG).show();
+                        Toast.makeText(context,context.getResources().getString(R.string.sportdeleted),Toast.LENGTH_LONG).show();
                         return true;
                 }
                 return false;

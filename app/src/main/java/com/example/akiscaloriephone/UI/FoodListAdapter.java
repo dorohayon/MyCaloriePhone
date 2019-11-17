@@ -50,7 +50,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.FoodLi
         String foodSize=foodEntry.getSize();
         holder.nameTextView.setInputType(InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         holder.nameTextView.setText(foodName);
-        holder.caloriesTextView.setText(String.valueOf(foodCalories)+" Calories/"+foodSize);
+        holder.caloriesTextView.setText(String.valueOf(foodCalories)+" "+context.getResources().getString(R.string.calories)+"/"+foodSize);
     }
 
 

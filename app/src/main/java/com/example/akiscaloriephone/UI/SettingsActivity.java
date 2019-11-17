@@ -53,8 +53,7 @@ public class SettingsActivity extends BaseActivity {
 
         new MaterialShowcaseView.Builder(this)
                 .setTarget(contentView)
-                .setContentText("Hello, this is the settings screen. Here you can add your details and determine your targets. " +
-                        "Use the favorite foods options to select foods that you get a reminder about them everyday and insert them automatic to your diary.")
+                .setContentText(getResources().getString(R.string.hellosettingsscreen))
                 .setDismissOnTouch(true)
                 .withoutShape()
                 .singleUse("8876")
@@ -70,7 +69,7 @@ public class SettingsActivity extends BaseActivity {
             if (!newValue.toString().equals("") && newValue.toString().matches("\\d*")) {
                 return true;
             } else {
-                Toast.makeText(getContext(), newValue + " Is not a valid number", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),getResources().getString(R.string.itsnotvalidnumber), Toast.LENGTH_LONG).show();
                 return false;
             }
         }
@@ -121,11 +120,11 @@ public class SettingsActivity extends BaseActivity {
                     if (breakfestSwitch.isChecked()) {
                         Log.e("log", "checked breakfast");
                         notificationReciever.setAlarmBreakfast(getContext());
-                        Toast.makeText(getContext(), "Favorite breakfast Notification is Enable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.favoritebreakfastnotificationenable), Toast.LENGTH_SHORT).show();
                     } else {
                         Log.e("log", "not checked breakfast");
                         notificationReciever.cancelAlarmBreakfast(getContext());
-                        Toast.makeText(getContext(), "Favorite breakfast Notification is disable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.favoritebreakfastnotificationdisable), Toast.LENGTH_SHORT).show();
                     }
                     return true;
 
@@ -139,10 +138,10 @@ public class SettingsActivity extends BaseActivity {
                     if (lunchSwitch.isChecked()) {
                         Log.e("log", "checked lunch");
                         notificationReciever.setAlarmLunch(getContext());
-                        Toast.makeText(getContext(), "Favorite lunch Notification is Enable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.favoritelunchnotificationenable), Toast.LENGTH_SHORT).show();
                     } else {
                         notificationReciever.cancelAlarmLunch(getContext());
-                        Toast.makeText(getContext(), "Favorite lunch Notification is disable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.favoritelunchnotificationdisable), Toast.LENGTH_SHORT).show();
                     }
                     return true;
 
@@ -157,11 +156,11 @@ public class SettingsActivity extends BaseActivity {
                     if (dinnerSwitch.isChecked()) {
                         Log.e("log", "checked dinner");
                         notificationReciever.setAlarmDinner(getContext());
-                        Toast.makeText(getContext(), "Favorite dinner Notification is Enable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.favoritedinnernotificationenable), Toast.LENGTH_SHORT).show();
                     } else {
                         Log.e("log", "not checked dinner");
                         notificationReciever.cancelAlarmDinner(getContext());
-                        Toast.makeText(getContext(), "Favorite dinner Notification is disable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.favoritdinnernotificationdisable), Toast.LENGTH_SHORT).show();
                     }
                     return true;
                 }
@@ -213,11 +212,11 @@ public class SettingsActivity extends BaseActivity {
                         resetStepCounterReciever.resetStepCount(getContext());
                         Intent stepCounterService = new Intent(getContext(), StepCounterService.class);
                         getActivity().startService(stepCounterService);
-                        Toast.makeText(getContext(), "Step counter is enable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.stepcounterenable), Toast.LENGTH_SHORT).show();
                     } else {
                         Intent stepCounterService = new Intent(getContext(), StepCounterService.class);
                         getActivity().stopService(stepCounterService);
-                        Toast.makeText(getContext(), "Step counter is disable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.stepcounterdisable), Toast.LENGTH_SHORT).show();
                     }
                     return true;
                 }

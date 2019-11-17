@@ -67,7 +67,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.FoodViewHold
         double foodQuantity = diaryEntry.getQuantity();
         String foodQuantiryString = String.valueOf(foodQuantity);
         holder.nameTextView.setText(foodName);
-        holder.caloriesTextView.setText(String.valueOf(foodCalories) + " " + "Calories");
+        holder.caloriesTextView.setText(String.valueOf(foodCalories) + " " + context.getResources().getString(R.string.calories));
         holder.quantityTextView.setText(foodQuantiryString+" X "+foodSize);
         if(diaryEntry.getDate()!=null) { // i'm on favorites food
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
@@ -110,12 +110,12 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.FoodViewHold
 
         @Override
         public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
-            menu.setHeaderTitle("Select Action");
+            menu.setHeaderTitle(context.getResources().getString(R.string.selectaction));
             if(diaryEntries.get(getAdapterPosition()).getDate()!=null) { //im on favorite food activity
-                MenuItem edit = menu.add(Menu.NONE, 1, 1, "Edit");
+                MenuItem edit = menu.add(Menu.NONE, 1, 1, context.getResources().getString(R.string.edit));
                 edit.setOnMenuItemClickListener(onChange);
             }
-            MenuItem delete = menu.add(Menu.NONE,2,2,"Delete");
+            MenuItem delete = menu.add(Menu.NONE,2,2,context.getResources().getString(R.string.delete));
             delete.setOnMenuItemClickListener(onChange);
         }
 
@@ -128,7 +128,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.FoodViewHold
                         return true;
                     case 2:
                         deleteFoodItem();
-                        Toast.makeText(context,"Food deleted from diary",Toast.LENGTH_LONG).show();
+                        Toast.makeText(context,context.getResources().getString(R.string.fooddeletedfromdiary),Toast.LENGTH_LONG).show();
                         return true;
                 }
                 return false;

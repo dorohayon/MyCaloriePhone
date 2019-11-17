@@ -133,7 +133,7 @@ public class EditAndAddSportActivity extends BaseActivity {
         sequence.addSequenceItem(
                 new MaterialShowcaseView.Builder(this)
                         .setTarget(intensitySpinner)
-                        .setContentText("Click here to Choose the intensity of your sport")
+                        .setContentText(getResources().getString(R.string.clicktochooseintensity))
                         .setDismissOnTouch(true)
                         .withRectangleShape()
                         .build()
@@ -141,7 +141,7 @@ public class EditAndAddSportActivity extends BaseActivity {
         sequence.addSequenceItem(
                 new MaterialShowcaseView.Builder(this)
                         .setTarget(timeEditText)
-                        .setContentText("Click here to set how long your sport last in minutes")
+                        .setContentText(getResources().getString(R.string.clicktochoosehowlong))
                         .setDismissOnTouch(true)
                         .withRectangleShape()
                         .build()
@@ -190,7 +190,7 @@ public class EditAndAddSportActivity extends BaseActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.menu_save_add_to_diary) {
             saveToDB();
-            Toast.makeText(this, "Sport Added", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.sportadded), Toast.LENGTH_LONG).show();
             int dateIndicator= getIntent().getIntExtra(AppContract.DATE_INDICATOR, 0);
             Intent mainActivity = new Intent(this, MainActivity.class);
             mainActivity.putExtra(AppContract.DATE_INDICATOR,dateIndicator);

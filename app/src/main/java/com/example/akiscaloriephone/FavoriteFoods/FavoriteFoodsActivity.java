@@ -51,7 +51,7 @@ public class FavoriteFoodsActivity extends BaseActivity implements DiaryAdapter.
         switch (favoriteFoodMode){
             case AppContract.MODE_FAVORITE_BREAKFEST :
                 favFoods= db.diaryDao().loadBreakfastFavirites();
-                addFavoriteButton.setText("Add new food to breakfast favorites");
+                addFavoriteButton.setText(getResources().getString(R.string.addnewfoodbreakfastfavorite));
                 addFavoriteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -63,7 +63,7 @@ public class FavoriteFoodsActivity extends BaseActivity implements DiaryAdapter.
                 break;
             case AppContract.MODE_FAVORITE_LUNCH :
                 favFoods= db.diaryDao().loadLunchFavirites();
-                addFavoriteButton.setText("Add new food to lunch favorites");
+                addFavoriteButton.setText(getResources().getString(R.string.addnewfoodlunchfavorite));
                 addFavoriteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -76,7 +76,7 @@ public class FavoriteFoodsActivity extends BaseActivity implements DiaryAdapter.
                 break;
             case AppContract.MODE_FAVORITE_DINNER :
                 favFoods= db.diaryDao().loadDinnerFavirites();
-                addFavoriteButton.setText("Add new food to dinner favorites");
+                addFavoriteButton.setText(getResources().getString(R.string.addnewfooddinnerfavorite));
                 addFavoriteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

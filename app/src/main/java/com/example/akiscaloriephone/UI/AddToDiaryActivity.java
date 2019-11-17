@@ -138,7 +138,7 @@ public class AddToDiaryActivity extends BaseActivity {
                 sequence.addSequenceItem(
                         new MaterialShowcaseView.Builder(activity)
                                 .setTarget(quantity)
-                                .setContentText("Click here to set the quantity")
+                                .setContentText(getResources().getString(R.string.clickheretosetthequantity))
                                 .setDismissOnTouch(true)
                                 .withRectangleShape()
                                 .build()
@@ -146,7 +146,7 @@ public class AddToDiaryActivity extends BaseActivity {
                 sequence.addSequenceItem(
                         new MaterialShowcaseView.Builder(activity)
                                 .setTarget(addtodiary)
-                                .setContentText("Click here to save the food to the diary")
+                                .setContentText(getResources().getString(R.string.clickheretosavethefood))
                                 .setDismissOnTouch(true)
                                 .build()
                 );
@@ -171,7 +171,7 @@ public class AddToDiaryActivity extends BaseActivity {
             }
             else {
                 saveToDiary();
-                Toast.makeText(this, "Food added to your diary", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getResources().getString(R.string.foodaddedtoyourdiary), Toast.LENGTH_LONG).show();
                  dateIndicator= getIntent().getIntExtra(AppContract.DATE_INDICATOR, 0);
                 Intent mainActivity = new Intent(AddToDiaryActivity.this, MainActivity.class);
                 mainActivity.putExtra(AppContract.DATE_INDICATOR,dateIndicator);
@@ -193,17 +193,17 @@ public class AddToDiaryActivity extends BaseActivity {
             case AppContract.MODE_FAVORITE_BREAKFEST :
                 //set 1 (true) to indicate this food record is favorite food record
                 diaryEntry.setIsInBreakfastFavorite(1);
-                Toast.makeText(this, "Food added to your breakfast favorites ", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getResources().getString(R.string.foodaddedfavoritebreakfast), Toast.LENGTH_LONG).show();
                 break;
             case AppContract.MODE_FAVORITE_LUNCH :
                 //set 1 (true) to indicate this food record is favorite food record
                 diaryEntry.setIsInLunchFavorite(1);
-                Toast.makeText(this, "Food added to your lunch favorites ", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getResources().getString(R.string.foodaddedfavoritelunch), Toast.LENGTH_LONG).show();
                 break;
             case AppContract.MODE_FAVORITE_DINNER :
                 //set 1 (true) to indicate this food record is favorite food record
                 diaryEntry.setIsInDinnerFavorite(1);
-                Toast.makeText(this, "Food added to your dinner favorites ", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getResources().getString(R.string.foodaddedfavoritedinner), Toast.LENGTH_LONG).show();
                 break;
 
         }

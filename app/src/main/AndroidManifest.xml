@@ -15,30 +15,30 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".UI.EditAndAddSportActivity"
-            android:label="Edit Sport Details" />
+            android:label="@string/editsportdetailsactivity" />
         <activity
             android:name=".UI.SportsListActivity"
-            android:label="Sports List" />
+            android:label="@string/sportlistactivity" />
         <activity
             android:name=".FavoriteFoods.FavoriteFoodsActivity"
-            android:label="My favorite foods" />
+            android:label="@string/myfavoritefoodsactivity" />
         <activity
             android:name=".UI.SettingsActivity"
-            android:label="@string/title_activity_settings" />
+            android:label="@string/settingsactivity" />
 
         <activity android:name=".UI.BaseActivity" />
         <activity
             android:name=".UI.AddToDiaryActivity"
-            android:label="Edit food details" />
+            android:label="@string/editfooddetailsactivity" />
         <activity
             android:name=".UI.FoodlistActivity"
-            android:label="List of foods" />
+            android:label="@string/listoffoodsactivity" />
         <activity
             android:name=".UI.NewFoodToFoodlistListActivity"
-            android:label="Add new food" />
+            android:label="@string/addnewfoodactivity" />
         <activity
             android:name=".UI.MainActivity"
-            android:label="My CaloriePhone">
+            android:label="@string/mainactivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

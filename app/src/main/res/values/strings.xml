@@ -70,10 +70,65 @@
     <string name="shlosetreveiperweek">0.75 Kg per week</string>
     <string name="oneperweek">1 Kg per week</string>
     <string name="current">Current</string>
+    <string name="delete">Delete</string>
     <string name="destination">Destination</string>
     <string name="Clicktomodifyfoodlongclicktodelete">Click to modify food , long click to delete</string>
     <string name="edit">Edit</string>
-    <string name="delete">Delete</string>
+    <string name="clickheretosetthequantity">here you can set the quantity</string>
+    <string name="clickheretosavethefood">here you can save the food to the diary</string>
+    <string name="foodaddedtoyourdiary">Food added to your diary</string>
+    <string name="foodaddedfavoritebreakfast">Food added to your breakfast favorites</string>
+    <string name="foodaddedfavoritelunch">Food added to your lunch favorites</string>
+    <string name="foodaddedfavoritedinner">Food added to your dinner favorites</string>
+    <string name="fooddeletedfromdiary">Food deleted from your diary</string>
+    <string name="clicktochooseintensity">Click here to Choose the intensity of your sport</string>
+    <string name="clicktochoosehowlong">Click here to set how long your sport last in minutes</string>
+    <string name="sportadded">Sport Added</string>
+    <string name="hellowelcome">Hello, Welcome to My CaloriePhone !\nIn order to calculate recommended values, You need to set your details.\nYou can perform it by this button or from settings.</string>
+    <string name="hereyouchoosefood">here you Choose food to add to your diary</string>
+    <string name="hereyouswitchprevious">here you switch to previous day</string>
+    <string name="hereyouswitchnext">here you switch to next day</string>
+    <string name="herecreatenewfood">here you can create new food to the list</string>
+    <string name="herechoosehowtosort">here you can choose how to sort the foods</string>
+    <string name="heresearch">here you search foods</string>
+    <string name="minutes">Minutes</string>
+    <string name="selectaction">Select Action</string>
+    <string name="sportdeleted">Sport deleted</string>
+    <string name="hellosettingsscreen">Hello, this is the settings screen. Here you can add your details and determine your targets.Use the favorite foods options to select foods that you get a reminder about them everyday and insert them automatic to your diary.</string>
+    <string name="itsnotvalidnumber">Error: please insert valid number</string>
+    <string name="favoritebreakfastnotificationenable">Favorite breakfast Notification is Enable</string>
+    <string name="favoritebreakfastnotificationdisable">Favorite breakfast Notification is disable</string>
+    <string name="favoritelunchnotificationenable">Favorite lunch Notification is Enable</string>
+    <string name="favoritelunchnotificationdisable">Favorite lunch Notification is disable</string>
+    <string name="favoritedinnernotificationenable">Favorite dinner Notification is Enable</string>
+    <string name="favoritdinnernotificationdisable">Favorite dinner Notification is disable</string>
+    <string name="stepcounterenable">Step counter is enable</string>
+    <string name="stepcounterdisable">Step counter is disable</string>
+    <string name="herechoosesporttoadd">here you choose sport to add</string>
+    <string name="addnewfoodbreakfastfavorite">Add new food to breakfast favorites</string>
+    <string name="addnewfoodlunchfavorite">Add new food to lunch favorites</string>
+    <string name="addnewfooddinnerfavorite">Add new food to dinner favorites</string>
+    <string name="timeforbreakfast">Time for breakfast</string>
+    <string name="clicktoaddfavoritebreakfast">Click to add your favorite breakfast</string>
+    <string name="timefordinner">Time for dinner</string>
+    <string name="clickaddfavdinner">Click to add your favorite dinner</string>
+    <string name="timeforlunch">Time for lunch</string>
+    <string name="clickaddfavlunch">Click to add your favorite lunch</string>
+    <string name="stepisrunning">Step Counter is running</string>
+    <string name="clickopensettings">Click to to open MyCaloriePhone settings</string>
+    <string name="pleasechoosefoodorder">Please choose foods order</string>
+    <string name="editsportdetailsactivity">Edit Sport Details</string>
+    <string name="sportlistactivity">Sports List</string>
+    <string name="myfavoritefoodsactivity">My favorite foods</string>
+    <string name="settingsactivity">Settings</string>
+    <string name="editfooddetailsactivity">Edit food details</string>
+    <string name="listoffoodsactivity">List of foods</string>
+    <string name="addnewfoodactivity">Add new food</string>
+    <string name="mainactivity">My CaloriePhone</string>
+
+
+
+
 
 
 

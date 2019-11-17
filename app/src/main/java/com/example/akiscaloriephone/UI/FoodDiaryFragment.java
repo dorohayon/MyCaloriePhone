@@ -208,28 +208,28 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
                 new MaterialShowcaseView.Builder(getActivity())
                         .setTarget(enterDatailsTextView)
                         .withRectangleShape()
-                        .setContentText("Hello, Welcome to My CaloriePhone !\nIn order to calculate recommended values, You need to set your details.\nYou can perform it by this button or from settings.")
+                        .setContentText(getResources().getString(R.string.hellowelcome))
                         .setDismissOnTouch(true)
                         .build()
         );
         sequence.addSequenceItem(
                 new MaterialShowcaseView.Builder(getActivity())
                         .setTarget(plusButton)
-                        .setContentText("here you Choose food to add to your diary")
+                        .setContentText(getResources().getString(R.string.hereyouchoosefood))
                         .setDismissOnTouch(true)
                         .build()
         );
         sequence.addSequenceItem(
                 new MaterialShowcaseView.Builder(getActivity())
                         .setTarget(prevDay)
-                        .setContentText("here you switch to previous day")
+                        .setContentText(getResources().getString(R.string.hereyouswitchprevious))
                         .setDismissOnTouch(true)
                         .build()
         );
         sequence.addSequenceItem(
                 new MaterialShowcaseView.Builder(getActivity())
                         .setTarget(nextDay)
-                        .setContentText("here you switch to next day")
+                        .setContentText(getResources().getString(R.string.hereyouswitchnext))
                         .setDismissOnTouch(true)
                         .build()
         );

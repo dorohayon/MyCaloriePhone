@@ -188,8 +188,7 @@ public class SportDiaryFragment extends Fragment implements MainActivity.OnNextD
                     .setDismissOnTouch(true)
                     .setDelay(500)
                     .singleUse("8")
-                    .withCircleShape()
-                    .setContentText("here you choose sport to add")
+                    .setContentText(getResources().getString(R.string.herechoosesporttoadd))
                     .show();
 
     }
