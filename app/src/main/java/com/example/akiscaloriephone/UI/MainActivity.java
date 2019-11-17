@@ -1,6 +1,8 @@
 package com.example.akiscaloriephone.UI;
 
 import androidx.core.app.ActivityCompat;
+import androidx.core.text.TextUtilsCompat;
+import androidx.core.view.ViewCompat;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import androidx.viewpager.widget.ViewPager;
@@ -24,6 +26,7 @@ import com.example.akiscaloriephone.R;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.Date;
+import java.util.Locale;
 
 
 public class MainActivity extends BaseActivity {
@@ -93,12 +96,16 @@ public class MainActivity extends BaseActivity {
 
 
 
-
-
-        //set date text
-        dateText = findViewById(R.id.dateText);
         prevDay = findViewById(R.id.prevDay);
         nextDay = findViewById(R.id.nextDay);
+        //to correct rtl viewing
+        boolean isLeftToRight = TextUtilsCompat.getLayoutDirectionFromLocale(Locale.getDefault()) == ViewCompat.LAYOUT_DIRECTION_LTR;
+        if(!isLeftToRight) {
+            prevDay.setImageDrawable(getResources().getDrawable(R.drawable.ic_right_arrow));
+            nextDay.setImageDrawable(getResources().getDrawable(R.drawable.ic_left_arrow));
+        }
+        //set date text
+        dateText = findViewById(R.id.dateText);
         diaryCalender.add(Calendar.DAY_OF_YEAR, dateIndicator);
         Date foodSavedDate = diaryCalender.getTime();
         String todayString = formatter.format(foodSavedDate);

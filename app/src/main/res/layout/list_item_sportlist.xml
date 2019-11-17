@@ -4,20 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="8dp">
 
 
     <TextView
         android:id="@+id/sportlistName"
         android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_vertical"
         android:text="sport name"
-        android:textAppearance="?android:textAppearanceMedium"
         android:textColor="#2B3D4D"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
 
 

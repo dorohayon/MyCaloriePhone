@@ -7,9 +7,8 @@
     android:padding="4dp">
 
     <LinearLayout
-        android:layout_width="245dp"
+        android:layout_width="252dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
         android:orientation="vertical">
 
         <TextView
@@ -18,8 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:fontFamily="sans-serif-medium"
-            android:singleLine="false"
             android:padding="4dp"
+            android:singleLine="false"
             android:text="חלב"
             android:textColor="#2B3D4D"
             android:textSize="16sp"
@@ -42,9 +41,8 @@
 
     <TextView
         android:id="@+id/diary_calories"
-        android:layout_width="65dp"
+        android:layout_width="69dp"
         android:layout_height="match_parent"
-        android:layout_marginRight="8dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="100 קלוריות"
@@ -53,7 +51,7 @@
 
     <TextView
         android:id="@+id/diary_hour"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="match_parent"
         android:fontFamily="sans-serif"
         android:gravity="center"

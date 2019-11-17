@@ -12,7 +12,7 @@
     <string name="age">גיל</string>
     <string name="breakfest">השתמש בארוחת בוקר מועדפת</string>
     <string name="calories">קלוריות</string>
-    <string name="calories_burned">קלוריות שנשרפו</string>
+    <string name="calories_burned">קלוריות נשרפו</string>
     <string name="choose_image">לחץ כדי לבחור תמונה</string>
     <string name="choose_size">בחר גודל</string>
     <string name="closeNav">סגור</string>
@@ -85,7 +85,7 @@
     <string name="clickopensettings">לחץ כאן כדי לפתוח את ההגדרות</string>
     <string name="clicktoaddfavoritebreakfast">לחץ כדי להוסיף את ארוחת הבוקר המועדפת</string>
     <string name="clicktochoosehowlong">לחץ כאן כדי להגדיר כמה זמן הפעילות נמשכה (בדקות)</string>
-    <string name="clicktochooseintensity">לחץ כאן כדי להגדיר את האינטנסיביות של הפעילות</string>
+    <string name="clicktochooseintensity">לחץ כאן כדי להגדיר רמת הקושי של הפעילות</string>
     <string name="favoritdinnernotificationdisable">התראות ארוחת ערב מועדפת מכובות</string>
     <string name="favoritebreakfastnotificationdisable">התראות ארוחת בוקר מועדפת מכובות</string>
     <string name="favoritebreakfastnotificationenable">התראות ארוחת בוקר מועדפת מופעלות</string>
