@@ -159,38 +159,8 @@ public class SportDiaryFragment extends Fragment implements MainActivity.OnNextD
         });
 
 
-        ViewPager viewPager=getActivity().findViewById(R.id.mainViewPager);
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                //if im on sport fragment on first time - run instruction.
-                if(position==1)
-                    instractionFirstTime();
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
-
 
         return view;
-    }
-    public void instractionFirstTime() {
-            new MaterialShowcaseView.Builder(getActivity())
-                    .setTarget(addSportButton)
-                    .setDismissOnTouch(true)
-                    .setDelay(500)
-                    .singleUse("8")
-                    .setContentText(getResources().getString(R.string.herechoosesporttoadd))
-                    .show();
-
     }
 
     private void setCalenderToMidnight(Calendar calender) {
