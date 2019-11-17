@@ -79,7 +79,7 @@ public class MainActivity extends BaseActivity {
         dl.addView(contentView, 0);
         dateIndicator = getIntent().getIntExtra(AppContract.DATE_INDICATOR, 0);
         final ViewPager viewPager = findViewById(R.id.mainViewPager);
-        final PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, 2);
+        final PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, 2,this);
         viewPager.setAdapter(pagerAdapter);
         TabLayout tabLayout = findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(viewPager);

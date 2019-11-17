@@ -3,18 +3,18 @@
 
     <item android:id="@+id/myDiaryNav"
         android:icon="@drawable/ic_nav_diary"
-        android:title="My Diary"/>
+        android:title="@string/mydiary"/>
 
     <item android:id="@+id/foodListNav"
         android:icon="@drawable/ic_nav_foodlist"
-        android:title="Food List"/>
+        android:title="@string/foodlist"/>
 
     <item android:id="@+id/sportListNav"
         android:icon="@drawable/ic_nav_sportlist"
-        android:title="Sport List"/>
+        android:title="@string/sportlist"/>
 
     <item android:id="@+id/settingsNav"
         android:icon="@drawable/ic_nav_settings"
-        android:title="Settings"/>
+        android:title="@string/settings"/>
 
 </menu>

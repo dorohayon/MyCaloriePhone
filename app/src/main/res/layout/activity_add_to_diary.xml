@@ -17,7 +17,7 @@
             android:layout_width="137dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Name" />
+            android:text="@string/name" />
 
 
         <!-- Name field -->
@@ -25,8 +25,7 @@
             android:id="@+id/foodname_add_to_diary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/edit_name"
-            android:inputType="textCapWords"
+            android:hint="@string/name"
             android:padding="16dp" />
 
     </LinearLayout>
@@ -42,15 +41,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="16dp"
-            android:text="Calories" />
+            android:text="@string/calories" />
         <!-- Breed field -->
         <TextView
             android:id="@+id/food_calories_add_to_diary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:hint="@string/edit_calories"
-            android:inputType="number|textCapWords"
+            android:hint="@string/calories"
             android:padding="16dp" />
 
 
@@ -65,7 +63,7 @@
             android:layout_width="137dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Measurement" />
+            android:text="@string/measurement" />
 
         <TextView
             android:id="@+id/foodsize_add_to_diary"
@@ -74,7 +72,9 @@
             android:paddingLeft="10dp"
             android:paddingTop="16dp"
             android:paddingRight="16dp"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="10dp" />
 
 
     </LinearLayout>
@@ -89,16 +89,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="16dp"
-            android:text="Quantity" />
+            android:text="@string/quantity" />
         <!-- Breed field -->
         <EditText
             android:id="@+id/edit_quantity_add_to_diary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:hint="Quantity"
+            android:hint="@string/quantity"
             android:inputType="numberDecimal"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:importantForAutofill="no" />
 
 
     </LinearLayout>

@@ -17,46 +17,46 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="Your details">
+    <PreferenceCategory app:title="@string/yourDetails">
 
         <EditTextPreference
             app:key="name"
-            app:title="Your name"
+            app:title="@string/name"
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
             android:entries="@array/Gender"
             android:entryValues="@array/Gender"
             android:key="Gender"
-            android:title="Your gender"
+            android:title="@string/gender"
             app:useSimpleSummaryProvider="true" />
         />
         <EditTextPreference
             app:key="age"
-            app:title="Your age"
+            app:title="@string/age"
             android:inputType="numberDecimal"
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             app:key="weight"
-            app:title="Your weight"
+            app:title="@string/weight"
             android:inputType="numberDecimal"
             app:useSimpleSummaryProvider="true" />
 
 
         <EditTextPreference
             app:key="height"
-            app:title="Your height"
+            app:title="@string/height"
             android:inputType="number"
             app:useSimpleSummaryProvider="true" />
 
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="Your Target">
+    <PreferenceCategory app:title="@string/yourtarget">
         <EditTextPreference
             app:key="weightTarget"
-            app:title="Your target weight"
+            app:title="@string/yourtargetWeight"
             android:inputType="numberDecimal"
             app:useSimpleSummaryProvider="true" />
 
@@ -64,58 +64,58 @@
             android:entries="@array/sportLevelKeys"
             android:entryValues="@array/sportLevelValues"
             android:key="LevelOfPhysicalActivity"
-            android:title="Your level of physical activity"
+            android:title="@string/levelOfPhisicalActivity"
             app:useSimpleSummaryProvider="true" />
         />
         <ListPreference
             android:entries="@array/changeSpeedKeys"
             android:entryValues="@array/changeSpeedValue"
             android:key="WeightChangeSpeed"
-            android:title="How much weight you want to\nlose/gain per week"
+            android:title="@string/HowMuchWeightPerWeek"
             app:useSimpleSummaryProvider="true" />
         />
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="Step Counter">
+    <PreferenceCategory app:title="@string/stepCounter">
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="stepCounterSwitch"
-            android:title="Use step counter" />
+            android:title="@string/useStepCounter" />
 
     </PreferenceCategory>
 
 
-        <PreferenceCategory app:title="Your favorites foods\n\n\nBreakfest">
+        <PreferenceCategory app:title="@string/yourFavoritesFoods">
             <SwitchPreference
                 android:defaultValue="false"
                 android:key="favoriteBreakfestSwitch"
-                android:title="Use favorite breakfest" />
-            <Preference android:title="Edit foods"
+                android:title="@string/Usefavoritebreakfest" />
+            <Preference android:title="@string/editFoods"
                 android:key="editFavBreakfestFoodsButton"
-                android:summary="Click here to edit favorite breakfest foods"/>
+                android:summary="@string/Clickheretoeditfavoritebreakfestfoods"/>
 
         </PreferenceCategory>
 
-        <PreferenceCategory app:title="Lunch">
+        <PreferenceCategory app:title="@string/lunch">
             <SwitchPreference
                 android:defaultValue="false"
                 android:key="favoriteLunchSwitch"
-                android:title="Use favorite lunch" />
-            <Preference android:title="Edit foods"
+                android:title="@string/UsefavoriteLunch" />
+            <Preference android:title="@string/editFoods"
                 android:key="editFavLunchFoodsButton"
-                android:summary="Click here to edit favorite lunch foods"/>
+                android:summary="@string/Clickheretoeditfavoritelunchfoods"/>
         </PreferenceCategory>
 
 
-        <PreferenceCategory app:title="Dinner">
+        <PreferenceCategory app:title="@string/dinner">
             <SwitchPreference
                 android:defaultValue="false"
                 android:key="favoriteDinnerSwitch"
-                android:title="Use favorite Dinner" />
-            <Preference android:title="Edit foods"
+                android:title="@string/UsefavoriteDinner" />
+            <Preference android:title="@string/editFoods"
                 android:key="editFavDinnerFoodsButton"
-                android:summary="Click here to edit favorite dinner foods"/>
+                android:summary="@string/Clickheretoeditfavoritedinnerfoods"/>
         </PreferenceCategory>
 
 

@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="food_size_array">
+        <item>@string/hundredgram</item>
+        <item>@string/Cup</item>
+        <item>@string/Dish</item>
+        <item>@string/Unit</item>
+        <item>@string/LittleSpoon</item>
+    </string-array>
+
     <string-array name="listOptions">
-        <item>Name</item>
-        <item>Calories</item>
-        <item>Recently added</item>
+        <item>@string/name</item>
+        <item>@string/calories</item>
+        <item>@string/recentlyadded</item>
     </string-array>
 
     <string-array name="listValues">
-        <item>Name</item>
-        <item>Calories</item>
-        <item>Recently added</item>
+        <item>@string/name</item>
+        <item>@string/calories</item>
+        <item>@string/recentlyadded</item>
     </string-array>
     <!-- Reply Preference -->
     <string-array name="reply_entries">
@@ -22,24 +30,24 @@
         <item>reply_all</item>
     </string-array>
     <string-array name="Gender">
-        <item>Male</item>
-        <item>Female</item>
+        <item>@string/male</item>
+        <item>@string/female</item>
     </string-array>
 
     <string-array name="sportLevelKeys">
-        <item>Almost none</item>
-        <item>A little</item>
-        <item>Fair Level</item>
-        <item>A lot</item>
-        <item>Very much active</item>
+        <item>@string/almostnone</item>
+        <item>@string/alittle</item>
+        <item>@string/fairlevel</item>
+        <item>@string/alot</item>
+        <item>@string/verymuchactive</item>
     </string-array>
 
     <string-array name="changeSpeedKeys">
-        <item>Keep my current weight</item>
-        <item>0.25 Kg per week</item>
-        <item>0.5 Kg per week</item>
-        <item>0.75 Kg per week</item>
-        <item>1 Kg per week</item>
+        <item>@string/keepmycurrentweight</item>
+        <item>@string/revaperweek</item>
+        <item>@string/heziperweek</item>
+        <item>@string/shlosetreveiperweek</item>
+        <item>@string/oneperweek</item>
     </string-array>
 
     <string-array name="changeSpeedValue">
@@ -59,8 +67,8 @@
     </string-array>
 
     <string-array name="foodsOrderArray">
-        <item>Name</item>
-        <item>Calories</item>
-        <item>Recently added</item>
+        <item>@string/name</item>
+        <item>@string/calories</item>
+        <item>@string/recentlyadded</item>
     </string-array>
 </resources>

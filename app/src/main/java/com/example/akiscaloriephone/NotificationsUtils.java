@@ -13,6 +13,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 import com.example.akiscaloriephone.FavoriteFoods.AddFavoriteBreakfastService;
+import com.example.akiscaloriephone.StepCounter.StopStepCounterService;
 
 
 public class NotificationsUtils {

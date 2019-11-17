@@ -49,7 +49,6 @@ public class FoodlistActivity extends BaseActivity implements FoodListAdapter.It
     private TextView caloriesTextView;
     private TextView sizeTextView;
     private SearchView searchView;
-    private ProgressBar progressBar;
     private int dateIndicator;
     private String currentMode;
     private Button sortByButton;
@@ -65,8 +64,6 @@ public class FoodlistActivity extends BaseActivity implements FoodListAdapter.It
         dateIndicator=getIntent().getIntExtra(AppContract.DATE_INDICATOR,0);
         nameTextView = findViewById(R.id.list_item_name);
         caloriesTextView = findViewById(R.id.list_item_calories);
-        progressBar=findViewById(R.id.progressBar);
-        progressBar.setVisibility(View.INVISIBLE);
         db = AppDatabase.getInstance(getApplicationContext());
         final RecyclerView recyclerViewFoodList = findViewById(R.id.recyclerViewFoodList);
         recyclerViewFoodList.setLayoutManager(new LinearLayoutManager(this));

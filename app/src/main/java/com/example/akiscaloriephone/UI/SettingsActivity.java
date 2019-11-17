@@ -23,6 +23,9 @@ import com.example.akiscaloriephone.AppContract;
 import com.example.akiscaloriephone.FavoriteFoods.NotificationReciever;
 import com.example.akiscaloriephone.FavoriteFoods.FavoriteFoodsActivity;
 import com.example.akiscaloriephone.R;
+import com.example.akiscaloriephone.StepCounter.ResetStepCounterReciever;
+import com.example.akiscaloriephone.StepCounter.StepCounterService;
+
 
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
 
@@ -208,11 +211,11 @@ public class SettingsActivity extends BaseActivity {
                     if (stepCounter.isChecked()) {
                         ResetStepCounterReciever resetStepCounterReciever = new ResetStepCounterReciever();
                         resetStepCounterReciever.resetStepCount(getContext());
-                        Intent stepCounterService = new Intent(getContext(), stepCounterService.class);
+                        Intent stepCounterService = new Intent(getContext(), StepCounterService.class);
                         getActivity().startService(stepCounterService);
                         Toast.makeText(getContext(), "Step counter is enable", Toast.LENGTH_SHORT).show();
                     } else {
-                        Intent stepCounterService = new Intent(getContext(), stepCounterService.class);
+                        Intent stepCounterService = new Intent(getContext(), StepCounterService.class);
                         getActivity().stopService(stepCounterService);
                         Toast.makeText(getContext(), "Step counter is disable", Toast.LENGTH_SHORT).show();
                     }

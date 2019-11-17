@@ -110,7 +110,7 @@ public class SportDiaryFragment extends Fragment implements MainActivity.OnNextD
         //set the steps counter
         SharedPreferences.Editor editor = sharedPreferences.edit();
         stepsCount = (TextView) view.findViewById(R.id.totalSteps);
-        stepsCount.setText("Total steps: " + sharedPreferences.getFloat(AppContract.STEP_PREFENCES, 0));
+        stepsCount.setText(getResources().getString(R.string.total_steps) +": " + sharedPreferences.getFloat(AppContract.STEP_PREFENCES, 0));
         db=AppDatabase.getInstance(getContext());
 
         // set up the RecyclerView of sports
@@ -255,13 +255,13 @@ public class SportDiaryFragment extends Fragment implements MainActivity.OnNextD
             steps = sharedPreferences.getFloat(AppContract.STEP_PREFENCES, 0);
         else
             steps = sharedPreferences.getFloat("steps" + startingTimeString, 0);
-        stepsCount.setText("Total steps: " + steps);
+        stepsCount.setText(getResources().getString(R.string.total_steps)+": " + steps);
     }
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         if (sharedPreferences.getBoolean("stepCounterSwitch", false))
-            stepsCount.setText("Total steps: " + sharedPreferences.getFloat(AppContract.STEP_PREFENCES, 0));
+            stepsCount.setText(getResources().getString(R.string.total_steps) +": " + sharedPreferences.getFloat(AppContract.STEP_PREFENCES, 0));
     }
 
     @Override

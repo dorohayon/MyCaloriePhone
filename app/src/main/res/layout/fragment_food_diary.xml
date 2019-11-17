@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:tint="@android:color/white" />
+        android:tint="@android:color/white"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/enterDetailsTextView"
@@ -22,10 +23,10 @@
         android:layout_marginTop="8dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:text="Please enter your details in order to calculate recommended values."
+        android:text="@string/enter_details_diary_fragment"
         android:textColor="#000000"
-        android:textSize="18dp"
-        android:fontFamily="sans-serif-medium"/>
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium" tools:targetApi="jelly_bean" />
 
 
     <TextView
@@ -36,9 +37,11 @@
         android:paddingTop="16dp"
         android:paddingRight="4dp"
         android:paddingBottom="4dp"
-        android:text="total calories"
+        android:text="@string/total_calories"
         android:textColor="#000000"
-        android:textSize="18dp" />
+        android:textSize="18sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp" />
 
     <TextView
         android:id="@+id/destinationCalories"
@@ -49,9 +52,12 @@
         android:paddingTop="16dp"
         android:paddingRight="4dp"
         android:paddingBottom="4dp"
-        android:text="destination calories"
+        android:text="@string/destination_calories"
         android:textColor="#000000"
-        android:textSize="18dp" />
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp" />
 
     <ProgressBar
         android:id="@+id/totalCaloriesProgressBar"

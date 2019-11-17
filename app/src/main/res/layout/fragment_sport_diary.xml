@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:tint="@android:color/white" />
+        android:tint="@android:color/white"
+        android:layout_alignParentEnd="true" />
 
 
     <TextView
@@ -26,9 +27,11 @@
         android:paddingTop="16dp"
         android:paddingRight="4dp"
         android:paddingBottom="4dp"
-        android:text="total steps"
+        android:text="@string/total_steps"
         android:textColor="#000000"
-        android:textSize="18dp" />
+        android:textSize="18sp"
+        android:paddingEnd="4dp"
+        android:paddingStart="8dp" />
 
 
 

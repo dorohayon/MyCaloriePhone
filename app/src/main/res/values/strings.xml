@@ -4,16 +4,86 @@
     <string name="edit_calories">Calories</string>
     <string name="choose_image">Click to Choose Image</string>
     <string name="choose_size">Choose a size</string>
-    <string-array name="food_size_array">
-        <item>100 Gram</item>
-        <item>1 Cup</item>
-        <item>1 Dish</item>
-        <item>1 Unit</item>
-        <item>1 Little-Spoon</item>
-    </string-array>
     <string name="openNav">Open</string>
     <string name="closeNav">Close</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="quantity">Quantity</string>
+    <string name="intensity">Intensity</string>
+    <string name="time_minutes">Time(minutes)</string>
+    <string name="enterDetailsMessageEditAndAddSportActivity">In order to get calories burned values , please enter your weight.</string>
+    <string name="number_of_minutes">Number of minutes</string>
+    <string name="calories_burned">Calories burned</string>
+    <string name="add_new_food_to_breakfast_favorites_button">Add new food to breakfast favorites</string>
+    <string name="sort_by">Sort by</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="age">Age</string>
+    <string name="yourtarget">Your Target</string>
+    <string name="yourDetails">Your Details</string>
+    <string name="yourtargetWeight">Target weight</string>
+    <string name="levelOfPhisicalActivity">Level of physical activity</string>
+    <string name="HowMuchWeightPerWeek">How much weight you want to\nlose/gain per week</string>
+    <string name="useStepCounter">Use step counter</string>
+    <string name="stepCounter">Step counter</string>
+    <string name="yourFavoritesFoods">Your favorites foods\n\n\nBreakfest</string>
+    <string name="breakfest">Use favorite breakfest</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="Usefavoritebreakfest">Use favorite breakfest</string>
+    <string name="UsefavoriteLunch">Use favorite Lunch</string>
+    <string name="UsefavoriteDinner">Use favorite Dinner</string>
+    <string name="editFoods">Edit foods</string>
+    <string name="Clickheretoeditfavoritedinnerfoods">Click here to edit favorite dinner foods</string>
+    <string name="Clickheretoeditfavoritebreakfestfoods">Click here to edit favorite breakfest foods</string>
+    <string name="Clickheretoeditfavoritelunchfoods">Click here to edit favorite lunch foods</string>
+    <string name="calories">Calories</string>
+    <string name="measurement">Measurement</string>
+    <string name="enter_details_diary_fragment">Please enter your details in order to calculate recommended values.</string>
+    <string name="total_calories">Total calories</string>
+    <string name="destination_calories">destination calories</string>
+    <string name="total_steps">Total steps</string>
+    <string name="food">Food</string>
+    <string name="sport">Sport</string>
+    <string name="backtotoday">BACK TO \nTODAY</string>
+    <string name="mydiary">My Diary</string>
+    <string name="foodlist">Food List</string>
+    <string name="sportlist">Sport List</string>
+    <string name="settings">Settings</string>
+    <string name="hundredgram">100 gram</string>
+    <string name="Cup">Cup</string>
+    <string name="Unit">Unit</string>
+    <string name="Dish">Dish</string>
+    <string name="LittleSpoon">Little-Spoon</string>
+    <string name="recentlyadded">Recently added</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="almostnone">Almost none</string>
+    <string name="alittle">A little</string>
+    <string name="fairlevel">Fair Level</string>
+    <string name="alot">A lot</string>
+    <string name="verymuchactive">Very much active</string>
+    <string name="keepmycurrentweight">Keep my current weight</string>
+    <string name="revaperweek">0.25 Kg per week</string>
+    <string name="heziperweek">0.5 Kg per week</string>
+    <string name="shlosetreveiperweek">0.75 Kg per week</string>
+    <string name="oneperweek">1 Kg per week</string>
+    <string name="current">Current</string>
+    <string name="destination">Destination</string>
+    <string name="Clicktomodifyfoodlongclicktodelete">Click to modify food , long click to delete</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+
+
+
+
+
+
+
+
+
 
 
 </resources>

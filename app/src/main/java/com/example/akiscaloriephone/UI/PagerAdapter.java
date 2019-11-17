@@ -1,17 +1,23 @@
 package com.example.akiscaloriephone.UI;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-public class PagerAdapter extends FragmentStatePagerAdapter {
-    int numOfPages;
+import com.example.akiscaloriephone.R;
 
-    public PagerAdapter(@NonNull FragmentManager fm, int behavior, int numOfPages) {
+public class PagerAdapter extends FragmentStatePagerAdapter {
+    private  int numOfPages;
+    private Context context;
+
+    public PagerAdapter(@NonNull FragmentManager fm, int behavior, int numOfPages,Context context) {
         super(fm, behavior);
         this.numOfPages = numOfPages;
+        this.context=context;
     }
 
     @NonNull
@@ -39,11 +45,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Food";
+                return context.getResources().getString(R.string.food);
             case 1:
-                return "Sport";
+                return context.getResources().getString(R.string.sport);
             default:
-                return "Food";
+                return context.getResources().getString(R.string.food);
         }
     }
 }

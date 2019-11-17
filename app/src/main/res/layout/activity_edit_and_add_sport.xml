@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="16dp"
-            android:text="Name" />
+            android:text="@string/name" />
 
 
         <!-- Name field -->
@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:hint="@string/edit_name"
-            android:inputType="textCapWords"
             android:padding="16dp" />
 
     </LinearLayout>
@@ -44,15 +43,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="16dp"
-            android:text="Calories burned" />
+            android:text="@string/calories_burned" />
         <!-- Breed field -->
         <TextView
             android:id="@+id/AddSportCalories"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:hint="Calories burned"
-            android:inputType="number|textCapWords"
+            android:hint="@string/calories_burned"
             android:padding="16dp" />
 
 
@@ -68,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="16dp"
-            android:text="Intensity" />
+            android:text="@string/intensity" />
 
         <Spinner
             android:id="@+id/AddSportIntensity"
@@ -89,16 +87,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="16dp"
-            android:text="Time(minutes)" />
+            android:text="@string/time_minutes" />
         <!-- Breed field -->
         <EditText
             android:id="@+id/AddSportTime"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:hint="Number of minutes"
+            android:hint="@string/number_of_minutes"
             android:inputType="number|textCapWords"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:importantForAutofill="no" />
 
 
     </LinearLayout>
@@ -109,10 +108,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="In order to get calories burned values , please enter your weight."
+        android:text="@string/enterDetailsMessageEditAndAddSportActivity"
         android:textColor="#000000"
-        android:textSize="18dp"
-        android:fontFamily="sans-serif-medium"/>
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium" tools:targetApi="jelly_bean" />
 
 
 

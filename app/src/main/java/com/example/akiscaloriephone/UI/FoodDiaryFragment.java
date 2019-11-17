@@ -173,13 +173,13 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
             public void onChanged(List<DiaryEntry> diaryEntries) {
                 diaryAdapter.setDiaryEntries(diaryEntries);
                 int total = getTotalCalories(diaryEntries);
-                totalCalories.setText("Current:\n" + String.valueOf(total)+" Calories");
+                totalCalories.setText(getResources().getString(R.string.current)+":\n" + String.valueOf(total)+" "+getResources().getString(R.string.calories));
                 progressBarCalories.setProgress(total);
                 //show instruction when first food added to diary.
                 if(diaryEntries.size()>0)
                     new MaterialShowcaseView.Builder(getActivity())
                             .setTarget(recyclerViewMain)
-                            .setContentText("Click to modify food , long click to delete")
+                            .setContentText(getResources().getString(R.string.Clicktomodifyfoodlongclicktodelete))
                             .setDismissOnTouch(true)
                             .setShapePadding(50)
                             .withRectangleShape()
@@ -279,9 +279,9 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
                 break;
         }
         double BMR = 0;
-        if (gender.equals("Male"))
+        if (gender.equals(getResources().getString(R.string.male)))
             BMR =  (66.0 + weight * 13.8 + height * 5.0 - age * 6.8);
-        if (gender.equals("Female"))
+        if (gender.equals(getResources().getString(R.string.female)))
             BMR = (655.0 + weight * 9.6 + height * 1.8 - age * 4.7);
         double dailyCaloriesExpense = 0;
         switch (sportLevel) {
@@ -317,7 +317,7 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
         progressBarCalories.setVisibility(View.VISIBLE);
         progressBarCalories.setMax((int)caloriesToEatPerDay);
         destinationCalories.setVisibility(View.VISIBLE);
-        destinationCalories.setText("Destination:\n" + (int) caloriesToEatPerDay+" Calories");
+        destinationCalories.setText(getResources().getString(R.string.destination)+":\n" + (int) caloriesToEatPerDay+" "+getResources().getString(R.string.calories));
         totalCalories.setVisibility(View.VISIBLE);
         enterDatailsTextView.setVisibility(View.INVISIBLE);
     }
@@ -369,7 +369,7 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
             public void onChanged(List<DiaryEntry> diaryEntries) {
                 diaryAdapter.updateData(diaryEntries);
                 int total = getTotalCalories(diaryEntries);
-                totalCalories.setText("Current:\n" + String.valueOf(total)+" Calories");
+                totalCalories.setText(getResources().getString(R.string.current)+":\n" + String.valueOf(total)+" "+getResources().getString(R.string.calories));
                 progressBarCalories.setProgress(total);
 
             }
@@ -388,7 +388,7 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
             public void onChanged(List<DiaryEntry> diaryEntries) {
                 diaryAdapter.updateData(diaryEntries);
                 int total = getTotalCalories(diaryEntries);
-                totalCalories.setText("Current:\n" + String.valueOf(total)+" Calories");
+                totalCalories.setText(getResources().getString(R.string.current)+":\n" + String.valueOf(total)+" "+getResources().getString(R.string.calories));
                 progressBarCalories.setProgress(total);
             }
         });
@@ -404,7 +404,7 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
             public void onChanged(List<DiaryEntry> diaryEntries) {
                 diaryAdapter.setDiaryEntries(diaryEntries);
                 int total = getTotalCalories(diaryEntries);
-                totalCalories.setText("Current:\n" + String.valueOf(total)+" Calories");
+                totalCalories.setText(getResources().getString(R.string.current)+":\n" + String.valueOf(total)+" "+getResources().getString(R.string.calories));
                 progressBarCalories.setProgress(total);
             }
         });
@@ -834,6 +834,8 @@ public class FoodDiaryFragment extends Fragment implements DiaryAdapter.ItemClic
         firstTimeFoods.add(new FoodEntry("קפה שחור",20 ,"כוס"));
         firstTimeFoods.add(new FoodEntry("כוס תה עם כפית סוכר",20 ,"כוס"));
         firstTimeFoods.add(new FoodEntry("תיון תה",0 ,"תיון"));
+
+
         AppExecutors.getInstance().diskIO().execute(new Runnable() {
             @Override
             public void run() {
