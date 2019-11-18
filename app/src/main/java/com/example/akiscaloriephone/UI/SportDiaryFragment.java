@@ -111,6 +111,8 @@ public class SportDiaryFragment extends Fragment implements MainActivity.OnNextD
         SharedPreferences.Editor editor = sharedPreferences.edit();
         stepsCount = (TextView) view.findViewById(R.id.totalSteps);
         stepsCount.setText(getResources().getString(R.string.total_steps) +": " + sharedPreferences.getFloat(AppContract.STEP_PREFENCES, 0));
+        if(!sharedPreferences.getBoolean("stepCounterSwitch",false))
+            stepsCount.setVisibility(View.INVISIBLE);
         db=AppDatabase.getInstance(getContext());
 
         // set up the RecyclerView of sports

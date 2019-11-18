@@ -24,7 +24,7 @@
     <string name="yourDetails">Your Details</string>
     <string name="yourtargetWeight">Target weight</string>
     <string name="levelOfPhisicalActivity">Level of physical activity</string>
-    <string name="HowMuchWeightPerWeek">How much weight you want to\nlose/gain per week</string>
+    <string name="HowMuchWeightPerWeek">Weight loss/gain target per week</string>
     <string name="useStepCounter">Use step counter</string>
     <string name="stepCounter">Step counter</string>
     <string name="yourFavoritesFoods">Your favorites foods\n\n\nBreakfest</string>
@@ -40,7 +40,7 @@
     <string name="Clickheretoeditfavoritelunchfoods">Click here to edit favorite lunch foods</string>
     <string name="calories">Calories</string>
     <string name="measurement">Measurement</string>
-    <string name="enter_details_diary_fragment">Please enter your details in order to calculate recommended values.</string>
+    <string name="enter_details_diary_fragment">In order to calculate recommended consumption values,please insert your personal details</string>
     <string name="total_calories">Total calories</string>
     <string name="destination_calories">destination calories</string>
     <string name="total_steps">Total steps</string>
@@ -84,7 +84,7 @@
     <string name="clicktochooseintensity">Click here to Choose the intensity of your sport</string>
     <string name="clicktochoosehowlong">Click here to set how long your sport last in minutes</string>
     <string name="sportadded">Sport Added</string>
-    <string name="hellowelcome">Hello, Welcome to My CaloriePhone !\nIn order to calculate recommended values, You need to set your details.\nYou can perform it by this button or from settings.</string>
+    <string name="hellowelcome">Hello, Welcome to My CaloriePhone !\nIn order to calculate recommended consumption values,please insert your personal details.\nYou can perform it by this button or from settings.</string>
     <string name="hereyouchoosefood">here you Choose food to add to your diary</string>
     <string name="hereyouswitchprevious">here you switch to previous day</string>
     <string name="hereyouswitchnext">here you switch to next day</string>

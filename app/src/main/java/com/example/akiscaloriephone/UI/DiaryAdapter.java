@@ -54,7 +54,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.FoodViewHold
     @NonNull
     @Override
     public DiaryAdapter.FoodViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_food_diary, parent, false);
         return new FoodViewHolder(view);
     }
 

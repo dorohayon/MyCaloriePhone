@@ -4,9 +4,9 @@
     <string name="Clickheretoeditfavoritebreakfestfoods">לחץ כאן כדי לערוך את ארוחת הבוקר המועדפת</string>
     <string name="Clickheretoeditfavoritedinnerfoods">לחץ כאן כדי לערוך את ארוחת הערב המועדפת</string>
     <string name="Clickheretoeditfavoritelunchfoods">לחץ כאן כדי לערוך את ארוחת הצהריים המועדפת</string>
-    <string name="HowMuchWeightPerWeek">כמה משקל אתה רוצה להוריד/להעלות בכל שבוע</string>
+    <string name="HowMuchWeightPerWeek">כמות משקל להוריד/להעלות בכל שבוע</string>
     <string name="UsefavoriteDinner">השתמש בארוחת ערב מועדפת</string>
-    <string name="UsefavoriteLunch">"השתמש בארוחת צהריים מועדפת "</string>
+    <string name="UsefavoriteLunch">השתמש בארוחת צהריים מועדפת</string>
     <string name="Usefavoritebreakfest">השתמש בארוחת בוקר מועדפת</string>
     <string name="add_new_food_to_breakfast_favorites_button">הוסף מאכל חדש לארוחת הבוקר המועדפת</string>
     <string name="age">גיל</string>
@@ -22,7 +22,7 @@
     <string name="edit_calories">קלוריות</string>
     <string name="edit_name">שם</string>
     <string name="enterDetailsMessageEditAndAddSportActivity">כדי לקבל ערכי קלוריות שנשרפו , אנא הכנס את משקלך.</string>
-    <string name="enter_details_diary_fragment">אנא הכנס את הפרטים שלך על מנת שנוכל לחשב ערכים מומלצים.</string>
+    <string name="enter_details_diary_fragment">כדי שנוכל לחשב נתוני צריכה מומלצים , אנא הכנס את פרטייך האישיים.</string>
     <string name="gender">מין</string>
     <string name="height">גובה</string>
     <string name="intensity">רמת קושי</string>
@@ -51,7 +51,7 @@
     <string name="mydiary">היומן שלי</string>
     <string name="foodlist">רשימת מאכלים</string>
     <string name="food">אוכל</string>
-    <string name="backtotoday">חזור להיום</string>
+    <string name="backtotoday">חזור לתאריך נוכחי</string>
     <string name="Cup">כוס</string>
     <string name="Dish">מנה</string>
     <string name="LittleSpoon">כפית</string>
@@ -98,7 +98,7 @@
     <string name="foodaddedtoyourdiary">המאכל נוסף ליומן</string>
     <string name="fooddeletedfromdiary">המאכל נמחק מהיומן</string>
     <string name="hellosettingsscreen">שלום,זהו מסך ההגדרות.כאן תוכל להוסיף את הפרטים שלך ולקבוע את המטרות שלך.השתמש בארוחות מועדפות כדי לבחור מאכלים שתקבל עליהם תזכורת יומית כדי להוסיף אותם ליומן באופן אוטומטי.</string>
-    <string name="hellowelcome">שלום,ברוכים הבאים לקלוריפון שלי.כדי לחשב ערכים מומלצים,אנא הגדר את הפרטים שלך. אתה יכול לבצע זאת באמצעות כפתור זה או מתוך הגדרות האפליקציה.</string>
+    <string name="hellowelcome">שלום,ברוכים הבאים לקלוריפון שלי.כדי שנוכל לחשב נתוני צריכה מומלצים, אנא הכנס את פרטייך האישיים.תוכל לעשות זאת באמצעות כפתור זה או מתוך הגדרות האפליקציה.</string>
     <string name="herechoosehowtosort">כאן תוכל לבחור איך למיין את המאכלים</string>
     <string name="herechoosesporttoadd">כאן תוכל לבחור פעילויות ספורט</string>
     <string name="herecreatenewfood">כאן תוכל להוסיף מאכל חדש לרשימת המאכלים</string>

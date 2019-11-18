@@ -50,7 +50,7 @@ public class MySportsAdapter extends RecyclerView.Adapter<MySportsAdapter.MySpor
     @NonNull
     @Override
     public MySportsAdapter.MySportsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_item_my_sport, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_sport_diary, parent, false);
         return new MySportsViewHolder(view);    }
 
     @Override
